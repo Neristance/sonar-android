@@ -87,9 +87,7 @@ public class SonarRulesGenerator {
     setTags(issue.getCategory(), dtoRule);
     dtoRules.addRule(dtoRule);
 
-    if (issue.isEnabledByDefault()) {
       dtoProfile.addRule(AndroidLintRulesDefinition.REPOSITORY_KEY, dtoRule.getKey());
-    }
   }
 
   private void setTags(@Nullable Category category, DtoRule dtoRule) {

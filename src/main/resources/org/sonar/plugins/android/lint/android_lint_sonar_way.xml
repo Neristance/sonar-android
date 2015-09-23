@@ -12,6 +12,10 @@
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
+         <key>StopShip</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
          <key>MissingPermission</key>
       </rule>
       <rule>
@@ -404,6 +408,10 @@
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
+         <key>NewerVersionAvailable</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
          <key>RequiredSize</key>
       </rule>
       <rule>
@@ -536,6 +544,10 @@
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
+         <key>EasterEgg</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
          <key>SetJavaScriptEnabled</key>
       </rule>
       <rule>
@@ -608,7 +620,15 @@
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
+         <key>LogConditional</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
          <key>ViewHolder</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
+         <key>FieldGetter</key>
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
@@ -668,6 +688,10 @@
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
+         <key>UnusedIds</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
          <key>UnusedNamespace</key>
       </rule>
       <rule>
@@ -681,6 +705,10 @@
       <rule>
          <repositoryKey>android-lint</repositoryKey>
          <key>TypographyFractions</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
+         <key>TypographyQuotes</key>
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
@@ -713,6 +741,10 @@
       <rule>
          <repositoryKey>android-lint</repositoryKey>
          <key>IconDuplicatesConfig</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
+         <key>IconExpectedSize</key>
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
@@ -752,6 +784,14 @@
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
+         <key>SelectableText</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
+         <key>BackButton</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
          <key>AppCompatResource</key>
       </rule>
       <rule>
@@ -773,6 +813,10 @@
       <rule>
          <repositoryKey>android-lint</repositoryKey>
          <key>TextFields</key>
+      </rule>
+      <rule>
+         <repositoryKey>android-lint</repositoryKey>
+         <key>NegativeMargin</key>
       </rule>
       <rule>
          <repositoryKey>android-lint</repositoryKey>
