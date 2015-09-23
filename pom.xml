@@ -52,7 +52,7 @@
     <sonar.pluginClass>org.sonar.plugins.android.AndroidPlugin</sonar.pluginClass>
     <sonar.pluginName>Android</sonar.pluginName>
     <sonar.requirePlugins>java:${sonar-java.version}</sonar.requirePlugins>
-    <lint.version>22.2.0</lint.version>
+    <lint.version>24.3.1</lint.version>
     <simplexml.version>2.7.1</simplexml.version>
     <jsr305.version>3.0.0</jsr305.version>
     <slf4j.version>1.7.10</slf4j.version>
@@ -93,6 +93,14 @@
     <dependency>
       <groupId>com.android.tools.lint</groupId>
       <artifactId>lint</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.android.tools.lint</groupId>
+      <artifactId>lint-checks</artifactId>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -198,7 +206,7 @@
     <resources>
       <resource>
         <directory>src/main/resources</directory>
-        <filtering>true</filtering>
+        <!--<filtering>true</filtering>-->
       </resource>
     </resources>
     <plugins>

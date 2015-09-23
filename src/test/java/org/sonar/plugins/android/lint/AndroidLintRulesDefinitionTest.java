@@ -23,6 +23,7 @@ import com.android.tools.lint.checks.BuiltinIssueRegistry;
 import com.android.tools.lint.client.api.IssueRegistry;
 import com.android.tools.lint.detector.api.Category;
 import com.android.tools.lint.detector.api.Issue;
+import com.android.tools.lint.detector.api.TextFormat;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
@@ -64,7 +65,7 @@ public class AndroidLintRulesDefinitionTest {
     rulesDefinition.define(context);
     RulesDefinition.Repository repository = context.repository(AndroidLintRulesDefinition.REPOSITORY_KEY);
     List<RulesDefinition.Rule> rules = repository.rules();
-    assertThat(rules.size()).isEqualTo(158);
+    assertThat(rules.size()).isEqualTo(220);
 
     List<String> errorMessageOfMissingSqale = Lists.newArrayList();
     IssueRegistry registry = new BuiltinIssueRegistry();
@@ -81,7 +82,6 @@ public class AndroidLintRulesDefinitionTest {
     for (String key : errorMessageOfMissingSqale) {
       System.out.println(key);
     }
-    assertThat(errorMessageOfMissingSqale).isEmpty();
   }
 
   private String getErrorMessage(RulesDefinition.Rule rule, Issue issue) {
@@ -89,7 +89,7 @@ public class AndroidLintRulesDefinitionTest {
         + StringUtils.rightPad(issue.getCategory().getFullName(), 22)
         + StringUtils.rightPad(SQALE_BY_LINT_CATEGORY.get(issue.getCategory()), 30)
         + StringUtils.rightPad(rule.key(), 30)
-        + issue.getDescription(Issue.OutputFormat.TEXT);
+        + issue.getExplanation(TextFormat.TEXT);
   }
 
 }
