@@ -1,6 +1,10 @@
 sonar-android-lint-plugin
 =========================
- 
+
+### Adaptions
+
+In order to have the 220 Lint rules (status 28th September 2015), this project was forked and adapted, to build the project it might be necessary to skip test, because they were not updated.
+
 ### Build status
 
 [![Build Status](https://api.travis-ci.org/SonarCommunity/sonar-android.png)](https://travis-ci.org/SonarCommunity/sonar-android)
@@ -33,4 +37,3 @@ II - Running an analyse:
 2. On another project using sonar-runner
  - Add this property to your sonar-project.properties
   -> sonar.profile=Android Lint
-
